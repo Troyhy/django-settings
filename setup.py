@@ -2,12 +2,12 @@
 import os
 from setuptools import setup, find_packages
 
-from django_settings import __version__ as version
+from django_settings.version import __version__
 
 
 setup(
     name='django-settings',
-    version=version,
+    version=__version__,
     description='Simple django reusable application for storing project settings in database.',
     author='Kuba Janoszek',
     author_email='kuba.janoszek@gmail.com',
