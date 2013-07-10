@@ -2,9 +2,11 @@
 import os
 from setuptools import setup, find_packages
 
+
 #Cannot import django_settings, because it will escalate impporting django at install time
 # this escalation breaks automated virtualenv creation from requirement files
 #import django_settings
+
 
 
 setup(
