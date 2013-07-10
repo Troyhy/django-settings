@@ -2,15 +2,17 @@
 import os
 from setuptools import setup, find_packages
 
-import django_settings
+#Cannot import django_settings, because it will escalate impporting django at install time
+# this escalation breaks automated virtualenv creation from requirement files
+#import django_settings
 
 
 setup(
     name='django-settings',
-    version=django_settings.__version__,
+    version='1.3-3-beta',
     description='Simple django reusable application for storing project settings in database.',
     author='Kuba Janoszek',
-    author_email='kuba.janoszek@gmail.com',
+    author_email='toni.royhy@designhouseilo.fi',
     url='http://github.com/jqb/django-settings',
     packages=find_packages(exclude=['example*', 'tests*']),
     include_package_data=True,
