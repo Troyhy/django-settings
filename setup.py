@@ -24,7 +24,7 @@ setup(
         'Framework :: Django',
     ],
     zip_safe=False,
-    install_requires=['django',],
+    install_requires=['django',],  
 )
 
 
